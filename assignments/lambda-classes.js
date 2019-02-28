@@ -162,9 +162,9 @@ const jerry = new Person({
     gender: 'Male'
 })
 
-// console.log(jerry.speak())
-// console.log(sara.speak())
-// console.log(tom.speak())
+console.log(jerry.speak())
+console.log(sara.speak())
+console.log(tom.speak())
 
 const sam = new Instructor({
     name: 'Sam',
@@ -198,10 +198,10 @@ const samuel = new Student({
 })
 
 const angel = new Student({
-    name: 'Samuel',
+    name: 'Angel',
     age: 33,
     location: 'Washington',
-    gender: 'Male',
+    gender: 'Female',
     className: 'WEB29',
     previousBackground: 'Consultant',
     favSubjects: ['Java', 'AI', 'PHP'],
@@ -220,20 +220,20 @@ const diamond = new Student({
 })
 
 // Teachers Test 
-// console.log(sam.speak())
-// console.log(olivia.speak())
-// console.log(sam.demo('PHP'))
-// console.log(olivia.demo('Ruby on Rails'))
-// console.log(sam.specialty)
-// console.log(olivia.catchPhrase)
-// console.log(Sam.grade(diamond, 'PHP'))
+console.log(sam.speak())
+console.log(olivia.speak())
+console.log(sam.demo('PHP'))
+console.log(olivia.demo('Ruby on Rails'))
+console.log(sam.specialty)
+console.log(olivia.catchPhrase)
+console.log(sam.grade(diamond, 'PHP'))
 // Students Test 
-// console.log(diamond.speak())
-// console.log(angel.speak())
+console.log(diamond.speak())
+console.log(angel.speak())
 console.log(samuel.listsSubjects())
-// console.log(angel.listsSubjects())
-// console.log(diamond.sprintChallenge('JavaScript'))
-// console.log(samuel.prAssignment('JavaScript'))
+console.log(angel.listsSubjects())
+console.log(diamond.sprintChallenge('JavaScript'))
+console.log(samuel.prAssignment('JavaScript'))
 console.log(sam.grade(diamond, 'JavaScript'))
 console.log(diamond.graduate())
 
@@ -255,7 +255,10 @@ const gary = new ProjectManager({
     favInstructor: 'Howard'
 })
 
-// console.log(roger.speak())
-// console.log(gary.speak())
-// console.log(gary.standUp('Working Hard'))
-// console.log(roger.debugsCode(diamond, 'Javascript'))
+console.log(roger.speak())
+console.log(gary.speak())
+console.log(gary.standUp('Working Hard'))
+console.log(roger.debugsCode(diamond, 'Javascript'))
+console.log(roger.grade(angel, 'JavaScript'))
+console.log(angel.graduate())
+

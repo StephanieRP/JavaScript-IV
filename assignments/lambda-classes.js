@@ -52,7 +52,9 @@ class Instructor extends Person {
     }
 
     grade(student) {
-       let grade = Math.floor((Math.random() * 100) + 1);
+       let max = 95,
+           min = 50, 
+           grade = Math.floor((Math.random() * (max - min + 1) + min));
        student.grade = grade;
         return `${student.name} receives a score of ${grade}`;
     }
@@ -87,7 +89,8 @@ class Student extends Person {
     }
 
     listsSubjects() {
-        return this.favSubjects;
+        let subject = this.favSubjects;
+        return subject.join(', ');
     }
 
     prAssignment(subject) {
@@ -227,7 +230,7 @@ const diamond = new Student({
 // Students Test 
 // console.log(diamond.speak())
 // console.log(angel.speak())
-// console.log(samuel.listsSubjects())
+console.log(samuel.listsSubjects())
 // console.log(angel.listsSubjects())
 // console.log(diamond.sprintChallenge('JavaScript'))
 // console.log(samuel.prAssignment('JavaScript'))
